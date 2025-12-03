@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pratham Yadav - CS 100 Portfolio</title>
+  <style>
+    /* Page background & base styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+      color: #0f172a;
+    }
+
+    /* Main centered card */
+    .page-wrapper {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+      padding: 25px 40px 40px;
+    }
+
+    /* Top navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 10px;
+    }
+
+    nav .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2563eb;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 0.95rem;
+      color: #4b5563;
+      padding: 6px 10px;
+      border-radius: 999px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #2563eb;
+      color: #ffffff;
+    }
+
+    /* Headings */
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0;
+      color: #111827;
+    }
+
+    h2 {
+      color: #2563eb;
+      margin-top: 5px;
+      border-left: 4px solid #2563eb;
+      padding-left: 10px;
+    }
+
+    h3 {
+      color: #111827;
+      margin-top: 20px;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 40px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #374151;
+    }
+
+    /* About section layout */
+    #about {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    #about-text {
+      flex: 1 1 250px;
+      min-width: 0;
+    }
+
+    #about img {
+      border-radius: 14px;
+      max-width: 320px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    /* Lists */
+    ul {
+      padding-left: 20px;
+      color: #374151;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    /* Images in interests & lessons */
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .image-row img {
+      border-radius: 12px;
+      max-width: 180px;
+      height: auto;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    }
+
+    /* Links */
+    a {
+      color: #2563eb;
+    }
+
+    a:hover {
+      color: #1d4ed8;
+    }
+
+    /* Small screen tweaks */
+    @media (max-width: 600px) {
+      .page-wrapper {
+        margin: 10px;
+        padding: 20px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      #about {
+        flex-direction: column;
+      }
+
+      #about img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <!-- Top navigation -->
+    <nav>
+      <div class="logo">Pratham Yadav</div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#interests">Interests</a>
+        <a href="#lessons">CS 100</a>
+      </div>
+    </nav>
+
+    <!-- About Me section -->
+    <section id="about">
+      <img src="images/IMG_6297.JPEG"
+           alt="Pratham playing electric guitar on stage with a microphone">
+
+      <div id="about-text">
+        <h1>Pratham Yadav</h1>
+        <h2>Computer Science Major</h2>
+
+        <p>
+          Hi, my name is Pratham. I am a freshman at George Mason University
+          pursuing a degree in computer science, and I spend a lot of time
+          balancing classes, homework, and learning new concepts in coding and
+          technology. When I am not studying, I like to relax and recharge by
+          doing the things I enjoy most. I love playing basketball with my
+          friends, going to the gym to stay active, and playing video games to
+          unwind. Music is also a big part of my life, and I really enjoy
+          playing my guitar and pushing myself to learn new songs and improve a
+          little bit every day.
+        </p>
+
+        <p>
+          Another important part of who I am is my love for traveling; I have
+          visited France, Italy, and India, and each place has given me new
+          experiences and helped me see different cultures and ways of life.
+          My dog Pluto, a small shih tzu who always makes me smile, is like my
+          little best friend, and spending time with him is one of the best
+          parts of my day. Overall, I try to keep growing as a person by
+          learning new things, staying active, and appreciating the people and
+          experiences around me.
+        </p>
+      </div>
+    </section>
+
+    <!-- Resume section -->
+    <section id="resume">
+      <h2>My Resume</h2>
+      <p>
+        You can view my resume here:
+        <a href="docs/Resume.docx.pdf" target="_blank">
+          View my resume (PDF)
+        </a>
+      </p>
+    </section>
+
+    <!-- My Interests section -->
+    <section id="interests">
+      <h2>My Interests</h2>
+
+      <p>
+        Outside of classes, I spend a lot of time on things I enjoy. These
+        hobbies help me relax, stay active, and keep learning new skills in
+        different areas of my life.
+      </p>
+
+      <!-- List of interests -->
+      <ul>
+        <li>Gaming</li>
+        <li>Going to the gym</li>
+        <li>Coding</li>
+        <li>Playing guitar</li>
+        <li>Basketball</li>
+      </ul>
+
+      <!-- Images related to my interests -->
+      <h3>Some of my favorite activities</h3>
+      <div class="image-row">
+        <img src="images/gaming.jpg"
+             alt="Gaming setup or video game controller">
+
+        <img src="images/gym.jpeg"
+             alt="Gym equipment representing working out">
+
+        <img src="images/coding.jpeg"
+             alt="Computer screen with code representing programming">
+
+        <img src="images/gutair.jpeg"
+             alt="Electric guitar representing playing music">
+
+        <img src="images/basketball.jpeg"
+             alt="Basketball on a court">
+      </div>
+
+      <!-- Links to websites I like -->
+      <h3>Websites I Use</h3>
+      <ul>
+        <li>
+          <a href="https://www.goldsgym.com/" target="_blank">
+            Gold's Gym
+          </a>
+        </li>
+        <li>
+          <a href="https://www.playstation.com/en-us/" target="_blank">
+            PlayStation
+          </a>
+        </li>
+        <li>
+          <a href="https://leetcode.com/" target="_blank">
+            LeetCode
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Lessons Learned in CS 100 section -->
+    <section id="lessons">
+      <h2>Lessons Learned in CS 100</h2>
+
+      <p>
+        In CS 100 I was introduced to the basics of computer science and how
+        computers actually solve problems, which helped me understand what is
+        happening behind the scenes when we run programs or use different types
+        of software. I learned how to think more logically by breaking problems
+        into smaller, clear steps using algorithms and pseudocode, and this
+        made it easier to approach assignments in a more organized way. The
+        class also gave me practice with simple programming concepts and showed
+        me how code, data, and hardware all connect to each other. Another
+        important lesson from CS 100 was how to use new tools and programs on
+        my own, including reading instructions carefully, fixing errors, and
+        not getting discouraged when something did not work the first time.
+        These experiences taught me to be more patient and independent as a
+        learner, which I know will help me in future computer science courses
+        and in my career. Overall, CS 100 gave me a solid starting point and
+        helped confirm that I really want to keep going in computer science.
+      </p>
+
+      <h3>CS 100 in Pictures</h3>
+      <div class="image-row">
+        <img src="images/cs1001.png"
+             alt="Image representing concepts learned in CS 100">
+
+        <img src="images/cs1002.jpeg"
+             alt="Another image showing ideas or tools from CS 100">
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
